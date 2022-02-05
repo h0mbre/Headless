@@ -120,6 +120,9 @@ def build_cmd(args, deps):
     # If we have a project name, use it, if not make one
     proj = args.project if args.project else get_rand_project_name()
     cmd = f"{cmd} {proj}"
+    
+    # Import the target
+    cmd = f"{cmd} -import {args.target}"
 
     # If we have deps, import them
     for path in deps:
