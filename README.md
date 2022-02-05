@@ -3,6 +3,9 @@
 # Headless
 Wrapper around Ghidra's analyzeHeadless script, could be helpful to some? Don't tell me anything is wrong with it, it works on my machine.
 
+# Requirement
+You will need https://pypi.org/project/pylddwrap/
+
 # OPTIONS:
 
 `-t, --target`                    Path of the target ELF to analyze
